@@ -20,7 +20,11 @@ body {
     background-color: #fff;
 }
 
-.mono-text, .period, .badge, .skill-pill, .role, .location {
+.period,
+.badge,
+.skill-pill,
+.role,
+.location {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -41,10 +45,22 @@ body {
     margin-bottom: 32px;
 }
 
-h1 { font-size: 24px; font-weight: bold; }
-.role { font-size: 14px; margin-top: 4px; }
-.location a { color: #9CA0A8; text-decoration: none; font-size: 12px; }
-.location a:hover { text-decoration: underline; }
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.role {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.location a {
+    color: #9ca0a8;
+    text-decoration: none;
+    font-size: 12px;
+}
+.location a:hover {
+    text-decoration: underline;
+}
 
 .social-links {
     display: flex;
@@ -65,32 +81,79 @@ h1 { font-size: 24px; font-weight: bold; }
     transition: background 0.2s;
 }
 
-.social-icon:hover { background: var(--accent); }
+.social-icon:hover {
+    background: var(--accent);
+}
 
 .profile-image img {
     width: 112px;
     height: 112px;
     border-radius: 50%;
-    object-cover: cover;
+    object-fit: cover;
 }
 
 /* Sections */
-section { margin-bottom: 32px; }
-h2 { font-size: 20px; font-weight: bold; margin-bottom: 12px; }
-p { font-size: 14px; }
+section {
+    margin-bottom: 32px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+p {
+    font-size: 14px;
+}
 
 /* Experience & Education */
-.experience-list { display: flex; flex-direction: column; gap: 16px; }
-.item-header { display: flex; justify-content: space-between; align-items: flex-start; }
-.title-group { display: flex; align-items: center; gap: 8px; }
-.job-title { font-weight: 600; font-size: 14px; }
-.badge { background: #eeeff0; padding: 2px 8px; border-radius: 4px; font-size: 12px; color: var(--muted-foreground); font-weight: 600; }
-.period { color: var(--muted-foreground); font-size: 14px; }
-.company { color: var(--muted-foreground); font-weight: 500; font-size: 14px; text-transform: capitalize; }
-.details { margin-top: 4px; }
+.experience-list,
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.title-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.job-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+.badge {
+    background: #eeeff0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--muted-foreground);
+    font-weight: 600;
+}
+.period {
+    color: var(--muted-foreground);
+    font-size: 14px;
+}
+.company {
+    color: var(--muted-foreground);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.details {
+    margin-top: 4px;
+}
 
 /* Skills */
-.skills-grid { display: flex; flex-wrap: wrap; gap: 4px; }
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
 .skill-pill {
     background: var(--pill-bg);
     color: var(--pill-text);
@@ -101,13 +164,33 @@ p { font-size: 14px; }
 }
 
 /* Footer */
-.footer { text-align: center; margin-top: 32px; font-family: monospace; font-size: 14px; }
-.footer a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
-.heart { color: #dc2626; margin-left: 4px; }
+.footer {
+    text-align: center;
+    margin-top: 32px;
+    font-family: monospace;
+    font-size: 14px;
+}
+.footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.heart {
+    color: #dc2626;
+    margin-left: 4px;
+}
 
 /* Mobile Responsive */
 @media (max-width: 640px) {
-    .header { flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
-    .item-header { flex-direction: column; }
-    .period { margin-top: 4px; }
+    .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .item-header {
+        flex-direction: column;
+    }
+    .period {
+        margin-top: 4px;
+    }
 }
